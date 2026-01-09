@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-image">
+            <img src="{% static 'images/profile.jpg' %}" alt="Michael">
+        </div>
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Michael</span> 👋</h1>
+            <p>
+                Backend Developer • Django • IoT • Arduino  
+                <br>
+                I build smart systems and scalable web applications.
+            </p>
+            <section class="home-extra">
+                <h2>Welcome!</h2>
+                <p>Welcome to my portfolio! I love creating smart solutions that combine technology, creativity, and practicality. From web apps to IoT projects, I enjoy building things that solve real problems.</p>
+                <p>When I’m not coding, I experiment with small electronics projects or explore new tech trends. I believe learning never stops!</p>
+                
+                <p>Take a look at my projects below to see what I’ve been working on, or reach out if you’d like to collaborate!</p>
+            </section>
+
+            <div class="hero-buttons">
+                <a href="/projects/" class="btn primary">View Projects</a>
+                <a href="/contact/" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+{% endblock %}
