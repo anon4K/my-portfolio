@@ -4,15 +4,18 @@
 
 {% block content %}
 <section class="about">
-    <h1>About Me</h1>
-
-    <p class="about-intro">
-        I’m Michael, a Computer Science graduate and backend-focused developer
-        with strong interest in Django, embedded systems, and IoT solutions.
-    </p>
+    <div class="page-header">
+        <span class="section-label">Get to know me</span>
+        <h1>About Me</h1>
+        <p class="about-intro">
+            I'm Michael, a Computer Science graduate and backend-focused developer
+            with strong interest in Django, embedded systems, and IoT solutions.
+        </p>
+    </div>
 
     <div class="about-grid">
-        <div>
+        <div class="about-card featured">
+            <span class="about-card-icon">🛠️</span>
             <h3>What I Do</h3>
             <ul>
                 <li>Backend development with Django</li>
@@ -22,16 +25,18 @@
             </ul>
         </div>
 
-        <div>
+        <div class="about-card">
+            <span class="about-card-icon">💻</span>
             <h3>Tech Stack</h3>
-            <ul class="skills">
-                <li>Python</li>
-                <li>Django</li>
-                <li>HTML / CSS</li>
-                <li>JavaScript (Basics)</li>
-                <li>Arduino / ESP8266 / ESP32</li>
-                <li>Git & GitHub</li>
-            </ul>
+            <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">HTML / CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Arduino</span>
+                <span class="tech-tag">ESP8266 / ESP32</span>
+                <span class="tech-tag">Git & GitHub</span>
+            </div>
         </div>
     </div>
 </section>
