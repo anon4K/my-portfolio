@@ -24,6 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY", "my-local-testing-key")
 
 DEBUG = os.environ.get("DEBUG", "True") == "True"
+print(f"==== DEBUG IS SET TO: {DEBUG} ====")
 
 ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "*").split(",")
 
